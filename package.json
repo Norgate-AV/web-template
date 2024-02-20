@@ -1,0 +1,42 @@
+{
+    "name": "test-html",
+    "displayName": "test-html",
+    "description": "",
+    "version": "0.0.0",
+    "license": "MIT",
+    "main": "assets/js/app.js",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "scripts": {
+        "commit": "git-cz",
+        "pretty:fix": "prettier --write .",
+        "start": "alive-server",
+        "prepare": "husky",
+        "doctoc": "doctoc --title '## Contents 📖' README.md",
+        "contrib:add": "all-contributors add",
+        "contrib:generate": "all-contributors generate",
+        "contrib:check": "all-contributors check"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^18.6.0",
+        "@commitlint/config-conventional": "^18.6.0",
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@types/node": "^20.11.16",
+        "alive-server": "^1.3.0",
+        "all-contributors-cli": "^6.26.1",
+        "commitizen": "^4.3.0",
+        "cz-conventional-changelog": "^3.3.0",
+        "doctoc": "^2.2.1",
+        "husky": "^9.0.10",
+        "lint-staged": "^15.2.2",
+        "prettier": "^3.2.5",
+        "semantic-release": "^23.0.2"
+    }
+}
